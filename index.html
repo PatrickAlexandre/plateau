@@ -9,17 +9,10 @@
     <!-- Bootstrap CSS & Font Awesome -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="nature.css"> <!-- Palette de couleurs inspirée par la nature -->
+    <link rel="stylesheet" href="saisons.css"> <!-- Palette de couleurs pour les saisons -->
 
     <style>
-        /* Palette de couleurs inspirée par la nature */
-        :root {
-            --vert-foret: #228B22;
-            --bleu-pale: #87CEEB;
-            --beige-clair: #F5F5DC;
-            --brun-terreux: #8B4513;
-            --gris-anthracite: #2F4F4F;
-        }
-
         /* Styles globaux */
         body {
             background-color: var(--beige-clair);
@@ -62,6 +55,11 @@
             padding: 20px 0;
             text-align: center;
         }
+
+        .badge-pill {
+            background-color: var(--brun-terreux);
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +83,7 @@
     <!-- Main Container -->
     <div class="container mt-4">
         <!-- Carte des Espaces Verts -->
-        <h1 class="text-center mb-4">Carte des Espaces Verts - Équipe Nord</h1>
+        <h1 class="text-center mb-4">👨‍🌾✂️🌳 Plateau</h1>
         <div class="embed-responsive embed-responsive-4by3 rounded-xxl">
             <iframe class="embed-responsive-item" src="https://www.google.com/maps/d/embed?mid=1X3tqLrz7lfqvgDEShX8CNL1fLMBw-_0&ehbc=2E312F&noprof=1" allowfullscreen></iframe>
         </div>
@@ -103,9 +101,16 @@
             <h2 class="text-center mb-4">Gestion des Équipes</h2>
             <ul class="list-group">
                 <li class="list-group-item">Équipe Nord <i class="fas fa-users"></i></li>
-                <li class="list-group-item">Équipe Sud <i class="fas fa-users"></i></li>
-                <li class="list-group-item">Équipe Est <i class="fas fa-users"></i></li>
-                <li class="list-group-item">Équipe Ouest <i class="fas fa-users"></i></li>
+                    <ul>
+                        <li>ASSIS Patrick (0113100)</li>
+                        <li>BEAULIEU Matthieu (0111431)</li>
+                        <li>CHANSAREL-BOURIGON Emmanuel (0113086)</li>
+                        <li>JACQUET Isabelle (0112660)</li>
+                        <li>MORANDAIS Jean-Pierre (012882)</li>
+                        <li>TURCEY Christophe (016265)</li>
+                    </ul>
+                <li class="list-group-item">Équipe Volante <i class="fas fa-users"></i></li>
+                <li class="list-group-item">Équipe B <i class="fas fa-users"></i></li>
             </ul>
         </div>
 
@@ -113,17 +118,62 @@
         <div id="outils" class="mt-5">
             <h2 class="text-center mb-4">Gestion des Outils</h2>
             <ul class="list-group">
-                <li class="list-group-item">Tondeuses <i class="fas fa-toolbox"></i></li>
-                <li class="list-group-item">Tronçonneuses <i class="fas fa-toolbox"></i></li>
-                <li class="list-group-item">Sécateurs <i class="fas fa-toolbox"></i></li>
-                <li class="list-group-item">Pelles <i class="fas fa-toolbox"></i></li>
+                <li class="list-group-item">
+                    Tondeuses 
+                    <i class="fas fa-toolbox"></i>
+                    <span class="badge badge-pill badge-primary">3</span> 
+                    <i class="fas fa-sun ete"></i> 
+                    <i class="fas fa-leaf printemps"></i>
+                </li> <!-- 3 Tondeuses -->
+                <li class="list-group-item">
+                    Tronçonneuses 
+                    <i class="fas fa-toolbox"></i>
+                    <span class="badge badge-pill badge-primary">1</span> 
+                    <i class="fas fa-snowflake hiver"></i> 
+                    <i class="fas fa-wind automne"></i>
+                </li> <!-- 1 Tronçonneuse -->
+                <li class="list-group-item">
+                    Sécateurs 
+                    <i class="fas fa-toolbox"></i>
+                    <span class="badge badge-pill badge-primary">2</span> 
+                    <i class="fas fa-leaf printemps"></i> 
+                    <i class="fas fa-wind automne"></i>
+                </li> <!-- 2 Sécateurs -->
+                <li class="list-group-item">
+                    Pelles 
+                    <i class="fas fa-toolbox"></i>
+                    <span class="badge badge-pill badge-primary">3</span> 
+                    <i class="fas fa-leaf printemps"></i> 
+                    <i class="fas fa-snowflake hiver"></i>
+                </li> <!-- 3 Pelles -->
             </ul>
+        </div>
+
+        <!-- Section Formation continue -->
+        <div id="formation-continue" class="mt-5">
+            <h2 class="text-center mb-4">Formation Continue</h2>
+            <p class="text-center">Nous offrons diverses formations pour améliorer les compétences de notre équipe. Voici quelques-unes des formations disponibles :</p>
+            <ul class="list-group">
+                <li class="list-group-item">Sécurité au travail <i class="fas fa-hard-hat"></i></li>
+                <li class="list-group-item">Utilisation avancée des tondeuses <i class="fas fa-mower"></i></li>
+                <li class="list-group-item">Techniques de taille et d'élagage <i class="fas fa-tree"></i></li>
+                <li class="list-group-item">Entretien et réparation des équipements <i class="fas fa-wrench"></i></li>
+                <li class="list-group-item">Gestion écologique des espaces verts <i class="fas fa-seedling"></i></li>
+            </ul>
+        </div>
+
+        <!-- Section Google Sheets -->
+        <div id="google-sheets" class="mt-4">
+            <h3 class="text-center mb-3">Gestion via Google Sheets</h3>
+            <div class="embed-responsive embed-responsive-16by9 rounded-xxl">
+                <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYZbd...embed?usp=sharing" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="footer mt-5">
-        <p>&copy; 2024 Mairie de Sartrouville | Tous droits réservés</p>
+        <p>&copy; 2024 Patrick au CTM de Sartrouville | Tous droits réservés</p>
     </div>
 
     <!-- Bootstrap JS -->

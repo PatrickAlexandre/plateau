@@ -1,0 +1,18 @@
+/* saisons.css */
+
+/* Couleurs pour chaque saison */
+.ete {
+    color: #FFA500; /* Orange pour l'été */
+}
+
+.printemps {
+    color: #32CD32; /* Vert pour le printemps */
+}
+
+.automne {
+    color: #FF8C00; /* Orange foncé pour l'automne */
+}
+
+.hiver {
+    color: #1E90FF; /* Bleu pour l'hiver */
+}
