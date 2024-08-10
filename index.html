@@ -110,7 +110,12 @@
                         <li>TURCEY Christophe (016265)</li>
                     </ul>
                 <li class="list-group-item">Équipe Volante <i class="fas fa-users"></i></li>
-                <li class="list-group-item">Équipe B <i class="fas fa-users"></i></li>
+                    <ul>
+                        <li>DUPONT Jean (0112345)</li>
+                        <li>LEFEVRE Marie (0119876)</li>
+                        <li>MARTIN Lucas (0116789)</li>
+                        <li>BERNARD Sophie (0115432)</li>
+                    </ul>
             </ul>
         </div>
 
@@ -153,20 +158,91 @@
         <div id="formation-continue" class="mt-5">
             <h2 class="text-center mb-4">Formation Continue</h2>
             <p class="text-center">Nous offrons diverses formations pour améliorer les compétences de notre équipe. Voici quelques-unes des formations disponibles :</p>
-            <ul class="list-group">
-                <li class="list-group-item">Sécurité au travail <i class="fas fa-hard-hat"></i></li>
-                <li class="list-group-item">Utilisation avancée des tondeuses <i class="fas fa-mower"></i></li>
-                <li class="list-group-item">Techniques de taille et d'élagage <i class="fas fa-tree"></i></li>
-                <li class="list-group-item">Entretien et réparation des équipements <i class="fas fa-wrench"></i></li>
-                <li class="list-group-item">Gestion écologique des espaces verts <i class="fas fa-seedling"></i></li>
-            </ul>
+            
+            <div class="accordion" id="formationAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Sécurité au travail <i class="fas fa-hard-hat"></i>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Apprenez les meilleures pratiques pour assurer votre sécurité et celle de vos collègues sur le lieu de travail.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Utilisation avancée des tondeuses <i class="fas fa-mower"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Découvrez comment utiliser efficacement les tondeuses, y compris des modèles spécifiques comme le Honda HRH536 HXE.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Techniques de taille et d'élagage <i class="fas fa-tree"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Perfectionnez vos compétences en matière de taille et d'élagage pour maintenir la santé des arbres et arbustes.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Entretien et réparation des équipements <i class="fas fa-wrench"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Apprenez à entretenir et réparer vos outils pour prolonger leur durée de vie.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Gestion écologique des espaces verts <i class="fas fa-seedling"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Explorez des pratiques durables pour la gestion des espaces verts qui respectent l'environnement.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Section Google Sheets -->
         <div id="google-sheets" class="mt-4">
             <h3 class="text-center mb-3">Gestion via Google Sheets</h3>
             <div class="embed-responsive embed-responsive-16by9 rounded-xxl">
-                <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYZbd...embed?usp=sharing" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIYFg-azTeMmjLKouv6eS5vFMgcOd_9UQ8sVZkGA4BjQFKriqPRWqj1-bR38yOoPrtlofoEakrqE43/pubhtml?widget=true&amp;headers=false"></iframe>
             </div>
         </div>
     </div>
