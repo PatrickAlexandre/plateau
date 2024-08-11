@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gestion Espaces Verts | Sartrouville</title>
+    <title>JardinierGO | #Plateau | Espaces Verts @Sartrouville</title>
 
     <!-- Bootstrap CSS & Font Awesome -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -60,6 +60,28 @@
             background-color: var(--brun-terreux);
             color: #fff;
         }
+
+        /* Styles pour le tableau */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--vert-foret);
+            color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 <body>
@@ -73,10 +95,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Carte <i class="fas fa-map-marker-alt"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#calendrier">Calendrier <i class="fas fa-calendar-alt"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#equipes">Équipes <i class="fas fa-users"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#outils">Outils <i class="fas fa-tools"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="staff.html">Calendrier <i class="fas fa-calendar-alt"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="staff.html">Équipes <i class="fas fa-users"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#outils">Outils <i class="fas fa-hands"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="app:SmartService">Incovar <i class="fas fa-user"></i></a></li>
             </ul>
+
+            <div class="d-none d-sm-inline mt-4">
+                <h2>Admin</h2>
+                <a href="papiers.html" title="📄 Papiers" class="d-none d-sm-inline">📄 Version Papier</a>
+                <a href="staff.html" title="⚙️ Équipe" class="d-none d-sm-inline">⚙️ Gestion</a>
+                <a href="garage.html" title="🧰 Garage">🧰 Garage</a>
+                <br>
+                <a href="Documentation/ValorisationEspacesVerts.md" title="Valorisation des Espaces verts" class="d-none d-sm-inline">Valorisation</a>
+            </div>
         </div>
     </nav>
 
@@ -84,172 +116,61 @@
     <div class="container mt-4">
         <!-- Carte des Espaces Verts -->
         <h1 class="text-center mb-4">👨‍🌾✂️🌳 Plateau</h1>
+
+        <!-- Bouton pour ouvrir Google Maps -->
+        <div class="text-center mt-4">
+            <a href="https://www.google.com/maps/d/u/0/viewer?mid=1X3tqLrz7lfqvgDEShX8CNL1fLMBw-_0&femb=1&ll=48.952977220249466%2C2.182584349999974&z=15" target="_blank" class="btn btn-primary">
+                Travaux à effectuer <!-- Icône de Carte --> <i class="fas fa-map-marked-alt"></i>
+            </a>
+        </div>
+        <hr>
+
+        <!-- Carte intégrée -->
         <div class="embed-responsive embed-responsive-4by3 rounded-xxl">
             <iframe class="embed-responsive-item" src="https://www.google.com/maps/d/embed?mid=1X3tqLrz7lfqvgDEShX8CNL1fLMBw-_0&ehbc=2E312F&noprof=1" allowfullscreen></iframe>
         </div>
+    </div>
 
-        <!-- Section Calendrier -->
-        <div id="calendrier" class="mt-5">
-            <h2 class="text-center mb-4">Calendrier des Tâches</h2>
-            <div class="embed-responsive embed-responsive-16by9 rounded-xxl">
-                <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=votre_calendrier_id" allowfullscreen></iframe>
-            </div>
+
+
+    <!-- Tableau des Espaces Verts -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Adresse</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Parc de la Rivière</td>
+                <td>123 Rue de la Rivière, 78500 Sartrouville</td>
+            </tr>
+            <tr>
+                <td>Jardin des Fleurs</td>
+                <td>456 Avenue des Fleurs, 78500 Sartrouville</td>
+            </tr>
+            <tr>
+                <td>Parc du Centre</td>
+                <td>789 Boulevard du Centre, 78500 Sartrouville</td>
+            </tr>
+            <!-- Ajoutez d'autres espaces verts ici -->
+        </tbody>
+    </table>
+
+
+
+    <div class="mt-5">
+        <div class="embed-responsive embed-responsive-16by9 rounded-xxl">
+            <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=votre_calendrier_id" allowfullscreen></iframe>
         </div>
 
-        <!-- Section Équipes -->
-        <div id="equipes" class="mt-5">
-            <h2 class="text-center mb-4">Gestion des Équipes</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Équipe Nord <i class="fas fa-users"></i></li>
-                    <ul>
-                        <li>ASSIS Patrick (0113100)</li>
-                        <li>BEAULIEU Matthieu (0111431)</li>
-                        <li>CHANSAREL-BOURIGON Emmanuel (0113086)</li>
-                        <li>JACQUET Isabelle (0112660)</li>
-                        <li>MORANDAIS Jean-Pierre (012882)</li>
-                        <li>TURCEY Christophe (016265)</li>
-                    </ul>
-                <li class="list-group-item">Équipe Volante <i class="fas fa-users"></i></li>
-                    <ul>
-                        <li>DUPONT Jean (0112345)</li>
-                        <li>LEFEVRE Marie (0119876)</li>
-                        <li>MARTIN Lucas (0116789)</li>
-                        <li>BERNARD Sophie (0115432)</li>
-                    </ul>
-            </ul>
-        </div>
-
-        <!-- Section Outils -->
-        <div id="outils" class="mt-5">
-            <h2 class="text-center mb-4">Gestion des Outils</h2>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    Tondeuses 
-                    <i class="fas fa-toolbox"></i>
-                    <span class="badge badge-pill badge-primary">3</span> 
-                    <i class="fas fa-sun ete"></i> 
-                    <i class="fas fa-leaf printemps"></i>
-                </li> <!-- 3 Tondeuses -->
-                <li class="list-group-item">
-                    Tronçonneuses 
-                    <i class="fas fa-toolbox"></i>
-                    <span class="badge badge-pill badge-primary">1</span> 
-                    <i class="fas fa-snowflake hiver"></i> 
-                    <i class="fas fa-wind automne"></i>
-                </li> <!-- 1 Tronçonneuse -->
-                <li class="list-group-item">
-                    Sécateurs 
-                    <i class="fas fa-toolbox"></i>
-                    <span class="badge badge-pill badge-primary">2</span> 
-                    <i class="fas fa-leaf printemps"></i> 
-                    <i class="fas fa-wind automne"></i>
-                </li> <!-- 2 Sécateurs -->
-                <li class="list-group-item">
-                    Pelles 
-                    <i class="fas fa-toolbox"></i>
-                    <span class="badge badge-pill badge-primary">3</span> 
-                    <i class="fas fa-leaf printemps"></i> 
-                    <i class="fas fa-snowflake hiver"></i>
-                </li> <!-- 3 Pelles -->
-            </ul>
-        </div>
-
-        <!-- Section Formation continue -->
-        <div id="formation-continue" class="mt-5">
-            <h2 class="text-center mb-4">Formation Continue</h2>
-            <p class="text-center">Nous offrons diverses formations pour améliorer les compétences de notre équipe. Voici quelques-unes des formations disponibles :</p>
-            
-            <div class="accordion" id="formationAccordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Sécurité au travail <i class="fas fa-hard-hat"></i>
-                            </button>
-                        </h2>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#formationAccordion">
-                        <div class="card-body">
-                            Apprenez les meilleures pratiques pour assurer votre sécurité et celle de vos collègues sur le lieu de travail.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Utilisation avancée des tondeuses <i class="fas fa-mower"></i>
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#formationAccordion">
-                        <div class="card-body">
-                            Découvrez comment utiliser efficacement les tondeuses, y compris des modèles spécifiques comme le Honda HRH536 HXE.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Techniques de taille et d'élagage <i class="fas fa-tree"></i>
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#formationAccordion">
-                        <div class="card-body">
-                            Perfectionnez vos compétences en matière de taille et d'élagage pour maintenir la santé des arbres et arbustes.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" id="headingFour">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Entretien et réparation des équipements <i class="fas fa-wrench"></i>
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#formationAccordion">
-                        <div class="card-body">
-                            Apprenez à entretenir et réparer vos outils pour prolonger leur durée de vie.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" id="headingFive">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Gestion écologique des espaces verts <i class="fas fa-seedling"></i>
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#formationAccordion">
-                        <div class="card-body">
-                            Explorez des pratiques durables pour la gestion des espaces verts qui respectent l'environnement.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Section Google Sheets -->
-        <div id="google-sheets" class="mt-4">
-            <h3 class="text-center mb-3">Gestion via Google Sheets</h3>
-            <div class="embed-responsive embed-responsive-16by9 rounded-xxl">
-                <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIYFg-azTeMmjLKouv6eS5vFMgcOd_9UQ8sVZkGA4BjQFKriqPRWqj1-bR38yOoPrtlofoEakrqE43/pubhtml?widget=true&amp;headers=false"></iframe>
-            </div>
-        </div>
     </div>
 
     <!-- Footer -->
     <div class="footer mt-5">
         <p>&copy; 2024 Patrick au CTM de Sartrouville | Tous droits réservés</p>
+        <a href="Documentation/Iris.html" target="_blank">&copy; 2024 Iris au CTM de Sartrouville | Tous droits réservés</a>
     </div>
 
     <!-- Bootstrap JS -->

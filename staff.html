@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Section Formulaire à gauche -->
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Formulaire</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Entrez votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+
+        <!-- Section Tableau à droite -->
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Equipe :</h2>
+            <h2 class="text-center mb-4">Travaux effectués semaine :</h2>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Lieux / Adresses</th>
+                        <th scope="col">Travaux à effectuer</th>
+                        <th scope="col">à faire...(date)</th>
+                        <th scope="col">Date (faite le...)</th>
+                        <th scope="col">Observation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Jean Dupont</td>
+                        <td>jean.dupont@example.com</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Marie Curie</td>
+                        <td>marie.curie@example.com</td>
+                        <td>Consectetur adipiscing elit.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Albert Einstein</td>
+                        <td>albert.einstein@example.com</td>
+                        <td>Sed do eiusmod tempor incididunt.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Section Google Sheets -->
+    <div id="google-sheets" class="mt-5">
+        <h3 class="text-center mb-3">Gestion via Google Sheets</h3>
+        <div class="embed-responsive embed-responsive-16by9 rounded-xxl">
+            <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIYFg-azTeMmjLKouv6eS5vFMgcOd_9UQ8sVZkGA4BjQFKriqPRWqj1-bR38yOoPrtlofoEakrqE43/pubhtml?widget=true&amp;headers=false"></iframe>
+        </div>
+    </div>
+
+    <!-- Section Équipes -->
+    <div id="equipes" class="mt-5">
+        <h2 class="text-center mb-4">Gestion des Équipes</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Équipe Nord <i class="fas fa-users"></i></li>
+            <ul>
+                <li>ASSIS Patrick <span class="badge bg-primary">0113100</span> - 
+                    <a href="tel:+330113100"><i class="fas fa-phone"></i></a> | 
+                    <a href="sms:+330113100"><i class="fas fa-sms"></i></a>
+                </li>
+                <!-- Ajoutez d'autres membres de l'équipe ici -->
+            </ul>
+            <li class="list-group-item">Équipe Volante <i class="fas fa-users"></i></li>
+            <ul>
+                <li>DUPONT Jean <span class="badge bg-primary">0112345</span> - 
+                    <a href="tel:+330112345"><i class="fas fa-phone"></i></a> | 
+                    <a href="sms:+330112345"><i class="fas fa-sms"></i></a>
+                </li>
+                <!-- Ajoutez d'autres membres de l'équipe ici -->
+            </ul>
+            <li class="list-group-item">Équipe CTM <i class="fas fa-users"></i></li>
+            <ul>
+                <li>Service de Ramassage <i class="fas fa-truck"></i> <span class="badge bg-primary">01120000</span> - 
+                    <a href="tel:+330120000"><i class="fas fa-phone"></i></a> | 
+                    <a href="sms:+330120000"><i class="fas fa-sms"></i></a>
+                </li>
+                <!-- Ajoutez d'autres membres de l'équipe ici -->
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Section Gestion des Équipes -->
+    <div id="gestion-equipes" class="mt-5">
+        <h2 class="text-center mb-4">Gestion des Équipes</h2>
+        <p class="text-center">Améliorez la gestion des équipes avec des stratégies et des formations ciblées. Voici quelques-unes des formations disponibles :</p>
+        
+        <div class="accordion" id="gestionAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Leadership et Motivation <i class="fas fa-user-tie"></i>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#gestionAccordion">
+                    <div class="card-body">
+                        Découvrez comment inspirer et motiver vos équipes pour atteindre des résultats optimaux.
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres formations ici -->
+        </div>
+    </div>
+
+    <!-- Section Formation Continue -->
+    <div id="formation-continue" class="mt-5">
+        <h2 class="text-center mb-4">Formation Continue</h2>
+        <p class="text-center">Nous offrons diverses formations pour améliorer les compétences de notre équipe. Voici quelques-unes des formations disponibles :</p>
+        
+        <div class="accordion" id="formationAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Sécurité au travail <i class="fas fa-hard-hat"></i>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#formationAccordion">
+                    <div class="card-body">
+                        Apprenez les meilleures pratiques pour assurer votre sécurité et celle de vos collègues sur le lieu de travail.
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres formations ici -->
+        </div>
+    </div>
+
+    <!-- Section Admin sur écran large-->
+    <div id="Admin" class="mt-5 d-none d-sm-inline">
+        <h2 class="text-center mb-4">Calendrier des Tâches</h2>
+        <div class="embed-responsive embed-responsive-16by9 rounded-xxl">
+            <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=votre_calendrier_id" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Section Formation continue -->
+        <div id="formation-continue" class="mt-5">
+            <h2 class="text-center mb-4">Formation Continue</h2>
+            <p class="text-center">Nous offrons diverses formations pour améliorer les compétences de notre équipe. Voici quelques-unes des formations disponibles :</p>
+            
+            <div class="accordion" id="formationAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Sécurité au travail <i class="fas fa-hard-hat"></i>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Apprenez les meilleures pratiques pour assurer votre sécurité et celle de vos collègues sur le lieu de travail.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Utilisation avancée des tondeuses <i class="fas fa-mower"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Découvrez comment utiliser efficacement les tondeuses, y compris des modèles spécifiques comme le Honda HRH536 HXE.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Techniques de taille et d'élagage <i class="fas fa-tree"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Perfectionnez vos compétences en matière de taille et d'élagage pour maintenir la santé des arbres et arbustes.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Entretien et réparation des équipements <i class="fas fa-wrench"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Apprenez à entretenir et réparer vos outils pour prolonger leur durée de vie.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Gestion écologique des espaces verts <i class="fas fa-seedling"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#formationAccordion">
+                        <div class="card-body">
+                            Explorez des pratiques durables pour la gestion des espaces verts qui respectent l'environnement.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Section Admin sur écran large-->
+    <!-- Tableau / 📄 Papiers "Travaux effectués"-->
+    <div id="Admin" class="mt-5 d-none d-sm-inline">
+
+        <h2 class="text-center mb-4">Calendrier des Tâches</h2>
+        <div class="embed-responsive embed-responsive-16by9 rounded-xxl">
+            <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=votre_calendrier_id" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+
+<!-- Bootstrap JS et dépendances -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
